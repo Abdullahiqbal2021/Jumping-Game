@@ -2,6 +2,7 @@
 let isJumping = false;
 let upTime, downTime;
 let btn = document.getElementsByClassName("start-btn")[0];
+let btnReplay = document.getElementsByClassName("btn-replay")[0];
 let startBox = document.getElementById("start-box");
 
 // GameOvervariables
@@ -62,10 +63,11 @@ btn.addEventListener("click", () => {
         character.style.animation = "none";
         gameoverbox.style.display = "flex";
 
-        setTimeout(() => {
-          location.reload();
-        }, 2500);
-
+        // setTimeout(() => {
+          // }, 2500);
+          btnReplay.addEventListener("click",()=>{
+            location.reload();
+        })
       }
 
     }

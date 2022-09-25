@@ -132,7 +132,8 @@ h2 {
   align-items: center;
 }
 
-.start-btn {
+.start-btn,
+.btn-replay {
   font-size: 25px;
   padding: 7px 14px;
   border-radius: 18px;
@@ -162,20 +163,25 @@ h2 {
   #score {
     left: 20px;
   }
-  
+
   #highscore {
     right: 20px;
   }
-  #score,#highscore{
+
+  #score,
+  #highscore {
     top: 10px;
     padding: 5px;
     font-size: 17px;
   }
-  #start-box h3{
+
+  #start-box h3 {
     text-align: center;
     font-size: 14px;
   }
-  .start-btn {
+
+  .start-btn,
+  .btn-replay {
     font-size: 18px;
     padding: 3px 8px;
     border-radius: 15px;
