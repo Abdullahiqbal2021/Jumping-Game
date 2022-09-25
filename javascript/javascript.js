@@ -145,9 +145,12 @@ btn.addEventListener("click", () => {
       isJumping = true;
     }, 10);
   }
-  document.body.addEventListener("click", () => {
-    jump();
-  })
+  setTimeout(() => {
+    
+    document.body.addEventListener("click", () => {
+      jump();
+    })
+  }, 100);
   function control(e) {
     if (e.key == 'ArrowUp' || e.key == ' ') {
       jump();
