@@ -21,6 +21,9 @@ let groundheight = parseInt(window.getComputedStyle(ground).getPropertyValue('he
 
 
 btn.addEventListener("click", () => {
+
+
+
   startBox.style.display = "none";
   character.style.animation = "animateball 1.2s linear infinite";
 
@@ -61,7 +64,7 @@ btn.addEventListener("click", () => {
 
         setTimeout(() => {
           location.reload();
-        }, 3000);
+        }, 2500);
 
       }
 
@@ -140,7 +143,9 @@ btn.addEventListener("click", () => {
       isJumping = true;
     }, 10);
   }
-
+  document.body.addEventListener("click", () => {
+    jump();
+  })
   function control(e) {
     if (e.key == 'ArrowUp' || e.key == ' ') {
       jump();
